@@ -1,0 +1,3 @@
+df = spark.read.format("csv").option("header","true").load("Files/orders/2019.csv")
+# df now is a Spark DataFrame containing CSV data from "Files/orders/2019.csv".
+display(df)
